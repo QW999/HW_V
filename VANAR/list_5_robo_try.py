@@ -5,7 +5,7 @@ from os import system
 option = ''
 over = False
 robo_x = 5 # index 5
-gmap = [' ',' ',' ',' ',' ','♖',' ',' ','⚔',' ']  # 10values / index 9
+gmap = [' ',' ',' ',' ',' ','♖',' ',' ',' ',' ']  # 10values / index 9
 
 while option != 'x':
     try:
@@ -58,6 +58,8 @@ while option != 'x':
 
     except IndexError:
         print('list assignment index out of range')
+        print('GAME OVER')
+        break
 
 
 
