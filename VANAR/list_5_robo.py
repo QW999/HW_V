@@ -7,10 +7,10 @@ option = ''
 over = False
 robo_x = 4   # index 4
 gmap = [' ','★','★',' ','♖',' ','⚔','⚔',' ',' ']
-system('cls')
+
 
 while option != 'x':
-    print('Work from 1 til 9 index inclusiv!')
+    print('Work from 1 til 8 index inclusiv!')
         ########## print the map #############
     system('cls')
     print()
