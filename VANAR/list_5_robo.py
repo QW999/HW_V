@@ -2,7 +2,7 @@
 from os import system
 
 print()
-hp = 20
+hp = 100
 option = ''
 over = False
 robo_x = 4   # index 4
@@ -46,7 +46,7 @@ while option != 'x':
         robo_x -= 1
         # print('left')
         if gmap[robo_x] == '⚔':  # Dinamit
-            hp -= 10
+            hp -= 50
             # gmap[robo_x] = '♖'
             # print('moved to index:', gmap.index('♖'))
             # print('hp: ', hp)
@@ -54,7 +54,7 @@ while option != 'x':
             #     gmap[robo_x] = '☠'  # Mort
             #     over = True
         if gmap[robo_x] == '★':  # healph
-            hp += 10
+            hp += 50
             gmap[robo_x] = '♖'
             print('moved to index:', gmap.index('♖'))
         else:
@@ -67,14 +67,14 @@ while option != 'x':
         robo_x += 1
         # print('right')
         if gmap[robo_x] == '⚔':
-            hp -= 10
+            hp -= 50
             # gmap[robo_x] = '♖'
             # print('moved to index:', gmap.index('♖'))
             # if hp == 0:
             #     gmap[robo_x] = '☠'
             #     over = True
         if gmap[robo_x] == '★':
-            hp += 10
+            hp += 50
             gmap[robo_x] = '♖'
             print('moved to index:', gmap.index('♖'))
         else:
