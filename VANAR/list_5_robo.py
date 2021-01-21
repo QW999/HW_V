@@ -1,13 +1,13 @@
 
 from os import system
 
-
-
+print()
 hp = 20
 option = ''
 over = False
 robo_x = 4   # index 4
 gmap = [' ','★','★',' ','♖',' ','⚔','⚔',' ',' ']
+system('cls')
 
 while option != 'x':
     print('Work from 1 til 9 index inclusiv!')
@@ -84,6 +84,10 @@ while option != 'x':
 
     elif option == 'x':
         print('GAME OVER')
+    print()
+    print('Fin current loop')
+    print()
+    print()
         ########## controls #############
 
 
