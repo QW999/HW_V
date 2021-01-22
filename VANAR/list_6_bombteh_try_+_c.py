@@ -13,7 +13,6 @@ gmap = [['X', 'B', 'H', 'H', 'H'],  # 0   ♘  ✠  ⚔
     ['H', 'H', 'H', 'H', 'H']] # 4]
 matrix = [['M'] * (len(gmap) + 2) for i in range(len(gmap) + 2)]
 matrix = np.array(matrix)
-gmap = np.array(gmap)
 
 for i in range(len(gmap)):
     for j in range(len(gmap[0])):
