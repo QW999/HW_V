@@ -18,7 +18,9 @@ gmap = [
 
 
 print()
-matrix = [['M'] * 7 for i in range(7)]
+s = len(gmap) + 2
+print("Lenght r/c= ", s)
+matrix = [['M'] * s for i in range(s)]
 matrix = np.array(matrix)
 gmap = np.array(gmap)
 
@@ -69,6 +71,7 @@ while option != 'x':
             print()
             print('GAME OVER')
             break
+        print('ban on cross border: M')
 
         option = input('>> ')
 
@@ -111,14 +114,12 @@ while option != 'x':
         if matrix[robo_r][robo_c] == 'M':
             over = True
             matrix[robo_r][robo_c] = 'D'
-            print('MINE')
         else:
             matrix[robo_r][robo_c] = 'X'
 
 
         if option == 'x':
             over = True
-            print('GAME OVER')
         ########## controls #############
 
     except IndexError:
