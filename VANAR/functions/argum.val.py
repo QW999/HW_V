@@ -42,3 +42,40 @@ def inputBoolean(message_b):
     print('bool_mes', type(bool_mes))
     return bool_mes
 inputBoolean(input('Enter inputBoolean message: '))
+
+
+
+
+
+def input_val(type_m, mess):
+    if type_m == 'i':
+        mess = int(mess)
+    if type_m == 'f':
+        mess = float(mess)
+    if type_m == 'b':
+        mess = bool(mess)
+
+    return (print(mess, end=" "), print(type(mess)))
+
+input_val(input('Type value: '), input('Enter mess: '))
+
+
+
+
+
+
+def input_val(type_m, mess):
+    while True:
+        if type_m == 'i':
+            mess = int(mess)
+        if type_m == 'f':
+            mess = float(mess)
+        if type_m == 'b':
+            mess = bool(mess)
+        else:
+            print('Incorect value!')
+            break
+
+        return (print(mess, end=" "), print(type(mess)))
+
+input_val(input('Type value: '), input('Enter mess: '))
