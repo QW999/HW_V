@@ -10,8 +10,7 @@ print('status_code is less than 400: ', result.ok)
 print('result.status_code: ', result.status_code)
 # pp.pprint(data)
 
-current_date = data['date']
-print('\ncurrent_date: ', current_date)
+print('\ncurrent_date: ', data['date'])
 print('Central European Bank rate:', data['base'])
 print('Changed in MDL: ', data['rates']['MDL'])
 print('Pls insert local val', end=": ")
