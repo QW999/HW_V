@@ -15,7 +15,7 @@ class Healthy:
             self.startDate = datetime.date(2021, 2, 1)
             self.Days_after_infect = self.today - self.startDate
         def __str__(self):
-             return "Infection date: " + str(self.startDate) + " / " + str(self.curred) + " / Days_after_infect" + str(self.Days_after_infect)
+             return "Infection date: " + str(self.startDate) + " / " + str(self.curred) + " / Days_after_infect: " + str(self.Days_after_infect)
         class Curred:
             def __init__(self):
                 self.startDate = datetime.date(2021, 2, 1)
